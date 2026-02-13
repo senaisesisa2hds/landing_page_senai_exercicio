@@ -180,9 +180,71 @@ address {
   color: var(--texto-cinza);
   font-size: 1.2rem;
 }
+/* Cards (Estilização) */
+.info {
+  padding: 4rem 0;
+  text-align: center;
+}
+.cards-info {
+  list-style: none; /* Remove os marcadores (Bolinhas) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;/* Permite o texto quebrar p/ linha abaixo*/
+}
+.card {
+  background-color: #241a1c;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+.card h3 {
+  color: var(--cor-destaque);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.card p {
+  background-color: var(--fundo-escuro);
+  padding: 1.5rem;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
 
+/* Seção (Endereço) */
+.endereco {
+  padding: 4rem 0;
+}
+.conteudo-endereco {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.texto-endereco {
+  font-size: 1.3rem;
+  line-height: 1.8; /* Aumenta o espaçamento entre linhas */
+  flex-grow: 1; /* Permite que o texto cresça se houver espaço */
+}
+.mapa {
+  width: 350px;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 15px rgba(0,0,0,0.3); */
+  box-shadow: 20px 20px 10px rgba(255,0,0,1);
+}
 
-
+/* Footer (Rodapé) */
+.footer {
+  background-color: var(--cor-primaria);
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 4rem;
+  font-size: 1.2rem;
+}
 
 /* _____________________________________________ */
 /* Responsividade (Tamanho de telas diferentes) */
@@ -227,6 +289,16 @@ address {
   .menu.aberto {
     display: flex;
   }
+
+  /* Reduz o tamanho das fontes para melhor legibilidade */
+  .conteudo-banner h1 {font-size: 3.5rem;}
+  .subtitulo {font-size: 1.5rem;}
+  .titulo-secao {font-size: 2.5rem;}
+  .texto-sobre h3 {font-size: 2rem;}
+  .texto-sobre p {font-size: 1.1rem;}
+  .card h3 {font-size: 1.5rem;}
+  .card p {font-size: 1.3rem;}
+  .texto-endereco {font-size: 1.1rem;}
 
 }
 
